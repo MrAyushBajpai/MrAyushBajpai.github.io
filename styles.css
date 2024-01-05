@@ -38,6 +38,7 @@ body {
     width: fit-content;
     padding: 5rem;
     display: flex;
+    flex-direction: column;
     
 }
 
@@ -70,4 +71,10 @@ body {
 .more-info-button:hover{
     background-color: var(--fgcolor-primary);
     color: var(--bgcolor-primary);
+}
+
+@media (min-width: 768px) {
+    .about-me-section {
+        flex-direction: row; /* Use row layout for larger screens */
+    }
 }
