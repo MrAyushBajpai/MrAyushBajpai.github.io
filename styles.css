@@ -53,13 +53,11 @@ body {
 }
 
 .about-me-container-left{
-    max-width: 50vw;
-    margin-right: 5rem;
+    max-width: 30vw;
 }
 
 .about-me-container-right{
-    margin-left: 5rem; 
-    max-width: 50vw;
+    max-width: 30vw;
 }
 
 .more-info-button{
@@ -76,5 +74,13 @@ body {
 @media (min-width: 768px) {
     .about-me-section {
         flex-direction: row; /* Use row layout for larger screens */
+    }
+
+    .about-me-container-left{
+        margin-right: 5rem;
+    }
+
+    .about-me-container-right{
+        margin-left: 5rem;
     }
 }
