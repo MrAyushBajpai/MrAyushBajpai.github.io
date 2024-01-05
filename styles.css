@@ -64,7 +64,8 @@ body {
     background-color: transparent;
     color: var(--fgcolor-secondary);
     padding: 1rem;
-    border: 2px solid var(--fgcolor-primary)
+    border: 2px solid var(--fgcolor-primary);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .more-info-button:hover{
