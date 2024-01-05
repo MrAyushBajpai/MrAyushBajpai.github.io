@@ -1,5 +1,5 @@
 :root{
-    --fgcolor-primary: #00ffff;
+    --fgcolor-primary: #00ffd5;
     --fgcolor-secondary: #c2f3ff;
     --bgcolor-primary: #000066;
 }
@@ -10,22 +10,65 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: var(--bgcolor-primary);
     color: var(--fgcolor-primary);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-header {
-    margin-top: 30vh;
-    text-align: center;
-}
-
-h1 {
+.intro-section h1 {
     color: var(--fgcolor-secondary);
     font-size: 7rem;
     margin: 0;
 }
 
-p {
+.intro-section p {
     font-size: 1.2rem;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30vh;
+    text-align: center;
+    height: 100vh;
+}
+
+
+.about-me-section{
+    margin: 15vh auto;
+    border: 2px solid var(--fgcolor-secondary);
+    width: fit-content;
+    padding: 5rem;
+    display: flex;
+    
+}
+
+.about-me-section h2 {
+    color: var(--fgcolor-secondary);
+    font-size: 3rem;
+}
+
+.about-me-section p{
+    color: lightgray;
+    font-size: 1.2rem;
+}
+
+.about-me-container-left{
+    max-width: 50vh;
+    margin-right: 5rem;
+}
+
+.about-me-container-right{
+    margin-left: 5rem; 
+    max-width: 50vh;
+}
+
+.more-info-button{
+    background-color: transparent;
+    padding: 1rem;
+    border: 2px solid var(--fgcolor-primary)
+}
+
+.more-info-button:hover{
+    background-color: var(--fgcolor-primary);
+    color: var(--bgcolor-primary);
+    transform: scale(1.05);
 }
