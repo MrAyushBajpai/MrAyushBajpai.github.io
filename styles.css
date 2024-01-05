@@ -70,5 +70,4 @@ body {
 .more-info-button:hover{
     background-color: var(--fgcolor-primary);
     color: var(--bgcolor-primary);
-    transform: scale(1.05);
 }
