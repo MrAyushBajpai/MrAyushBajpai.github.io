@@ -33,13 +33,12 @@ body {
 
 
 .about-me-section{
-    margin: 15vh auto;
+    margin: auto;
     border: 2px solid var(--fgcolor-secondary);
-    width: fit-content;
-    padding: 5rem;
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 .about-me-section h2 {
@@ -53,15 +52,17 @@ body {
 }
 
 .about-me-container-left{
-    max-width: 30vw;
+    max-width: 80vw;
 }
 
 .about-me-container-right{
-    max-width: 30vw;
+    max-width: 80vw;
+    padding: 1.1rem;
 }
 
 .more-info-button{
     background-color: transparent;
+    color: var(--fgcolor-secondary);
     padding: 1rem;
     border: 2px solid var(--fgcolor-primary)
 }
@@ -73,14 +74,20 @@ body {
 
 @media (min-width: 768px) {
     .about-me-section {
-        flex-direction: row; /* Use row layout for larger screens */
+        flex-direction: row;
+        margin: 15vh auto;
+        padding: 5rem;
+        width: fit-content;
+
     }
 
     .about-me-container-left{
         margin-right: 5rem;
+        max-width: 30vw;
     }
 
     .about-me-container-right{
         margin-left: 5rem;
+        max-width: 30vw;
     }
 }
