@@ -4,6 +4,8 @@
     --bgcolor-primary: #0e0e38;
 }
 
+*, *::before, *::after {box-sizing: border-box;}
+
 body {
     margin: 0;
     padding: 0;
@@ -33,13 +35,30 @@ body {
 
 
 .about-me-section{
+    position: relative;
     margin: auto;
     border: 2px solid var(--fgcolor-secondary);
+    border-radius: 5rem;
+    background-color: #a11212;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     line-height: 2rem;
+}
+
+.about-me-background-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #691414;
+    border: 2px solid var(--fgcolor-secondary);
+    border-radius: 5rem;
+    transform: translate(20px, 20px);
+    pointer-events: none;
+    z-index: -1;
 }
 
 .about-me-section h2 {
