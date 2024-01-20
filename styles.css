@@ -37,6 +37,7 @@ body {
 .about-me-section{
     position: relative;
     margin: auto;
+    margin-inline: 5vw;
     border: 2px solid var(--fgcolor-secondary);
     border-radius: 5rem;
     background-color: #a11212;
@@ -140,6 +141,16 @@ body {
     scale: 1.1;
 }
 
+@media (max-width: 767px) {
+    .tech-stack {
+        margin-inline: 5vw;
+        margin-top: 30rem;
+    }
+
+    .tech-stack h1 {
+        margin-bottom: 3rem;
+    }
+}
 
 @media (min-width: 768px) {
     .about-me-section {
