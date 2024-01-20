@@ -102,6 +102,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 30rem;
 }
 
 .tech-stack h1 {
@@ -184,7 +185,7 @@ body {
 @media (max-width: 767px) {
     .tech-stack {
         margin-inline: 5vw;
-        margin-top: 30rem;
+
     }
 
     .tech-stack h1 {
