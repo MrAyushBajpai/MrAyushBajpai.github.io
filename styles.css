@@ -9,12 +9,13 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: var(--bgcolor-primary);
     color: var(--fgcolor-primary);
 }
 
 .intro-section h1 {
+    font-weight: 700;
     color: var(--fgcolor-secondary);
     font-size: 7rem;
     margin: 0;
