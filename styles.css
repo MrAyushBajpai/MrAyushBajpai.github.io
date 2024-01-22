@@ -102,7 +102,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 30rem;
+    margin-top: 50vh;
 }
 
 .tech-stack h1 {
@@ -183,7 +183,7 @@ body {
 }
 
 .milestone {
-    margin-top: 5rem;
+    margin: 50vh 0;
 }
 .milestone h1{
     color: var(--fgcolor-secondary);
