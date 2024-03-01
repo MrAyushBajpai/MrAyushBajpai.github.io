@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             const fadeOutStartTime = Date.now();
             stars.style.opacity = 0;
+            playButton.classList.remove('fa-pause');
+            playButton.classList.add('fa-play');
             const fadeOutInterval = setInterval(function() {
                 const fadeOutElapsedTime = Date.now() - fadeOutStartTime;
                 if (fadeOutElapsedTime < fadeDuration) {
@@ -37,10 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     audio.volume = 0;
                     clearInterval(fadeOutInterval);
                     audio.pause();
-                    isPlaying = false;
-                    playButton.classList.remove('fa-pause');
-                    playButton.classList.add('fa-play');
-                    
+                    isPlaying = false;  
                 }
             }, 100);
         }
