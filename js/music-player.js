@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const maxVolume = 0.08;
 
     audio.volume = 0;
+    audio.loop = true;
 
     playButton.addEventListener('click', function() {
         if (!isPlaying) {
