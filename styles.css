@@ -231,17 +231,16 @@ span:nth-child(9){
 }
 
 .more-info-button {
-  background-color: #0066ff;
+  background-color: transparent;
+  border: 2px solid #4a4a4a;
   color: #fff;
-  padding: 1rem 2rem;
-  border: none;
+  padding: 1rem 2rem; 
   border-radius: 0.5rem;
   transition: background-color 0.3s, transform 0.3s;
   cursor: pointer;
 }
 
-.more-info-button:hover {
-  background-color: #0044cc;
+.more-info-button:hover { 
   transform: scale(1.05);
 }
 
