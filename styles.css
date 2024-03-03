@@ -1,5 +1,5 @@
 :root{
-    --fgcolor-primary: #00ffd5;
+    --fgcolor-primary: #ffd89b;
     --fgcolor-secondary: #c2f3ff;
     --bgcolor-primary: #000;
     --blob-opacity: 0;
@@ -42,7 +42,10 @@ body {
 }
 
 .intro-section h1 {
-  color: var(--fgcolor-secondary);
+  background-image: linear-gradient(135deg, rgba(84,129,236,1) 0%, rgba(212,102,119,1) 100%);
+  -webkit-background-clip: text; /* Clip text to the background's shape */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Make the text transparent so the background is visible */
   font-size: 7rem;
 }
 
@@ -51,7 +54,10 @@ body {
 }
 
 .intro-section .play{
-  color:#c2f3ff;
+  background-image: linear-gradient(135deg, rgba(84,129,236,1) 0%, rgba(212,102,119,1) 100%);
+  -webkit-background-clip: text; /* Clip text to the background's shape */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 4rem;
   padding: 2rem;
 }
