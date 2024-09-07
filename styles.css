@@ -314,6 +314,7 @@ span:nth-child(9) {
   color: var(--fgcolor-secondary);
   font-size: 4rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .contact-container {
@@ -629,6 +630,9 @@ span:nth-child(9) {
 }
 
 @media (max-width: 1024px) {
+  .contact-card {
+    width: calc(50% - 40px); /* 2 cards per row */
+  }
   .contact-card h2 {
     font-size: 1.8rem;
   }
@@ -651,8 +655,8 @@ span:nth-child(9) {
   }
 
   .contact-card {
-    width: calc(100% - 40px);
-    height: auto;
+    width: calc(100% - 40px); /* Full-width cards on smaller screens */
+    margin: 10px;
   }
 
   .contact-card h2 {
@@ -729,6 +733,10 @@ span:nth-child(9) {
 }
 
 @media (max-width: 480px){
+  .contact-card {
+    width: calc(100% - 20px); /* Slightly smaller margin */
+    padding: 15px; /* Reduce padding */
+  }
   .contact-card h2 {
     font-size: 1.2rem;
   }
