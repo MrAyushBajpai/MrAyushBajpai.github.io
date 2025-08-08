@@ -21,6 +21,10 @@ body {
   color: var(--fgcolor-primary);
 }
 
+a{
+  text-decoration: none;
+}
+
 .hidden {
   opacity: 0;
   filter: blur(2px);
