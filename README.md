@@ -34,7 +34,3 @@ open index.html
 # Or serve with any static file server, e.g.:
 npx serve .
 ```
-
-## 📄 License
-
-© Ayush Bajpai. All rights reserved.
