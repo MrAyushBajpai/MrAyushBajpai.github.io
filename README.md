@@ -1,6 +1,6 @@
 # Ayush Bajpai — Personal Portfolio
 
-Personal portfolio website for [Ayush Bajpai](https://ayushbajpai.me), an entry-level Software Engineer specialising in backend systems, real-time data pipelines, and intelligent architectures.
+Personal portfolio website for **Ayush Bajpai**, Technical Product & Business Analyst, QA/API Tester, and Systems Engineer.
 
 ## 🌐 Live Site
 
@@ -8,29 +8,31 @@ Personal portfolio website for [Ayush Bajpai](https://ayushbajpai.me), an entry-
 
 ## 🛠️ Tech Stack
 
-- **HTML5** — single-page structure
-- **Tailwind CSS** (CDN) — utility-first styling with a custom dark-mode theme
-- **Vanilla JavaScript** — interactivity and animations
-- **GitHub Pages** — hosting
+- **HTML5** — semantic, accessible single-page layout
+- **Modern CSS** — custom design tokens, dark palette, responsive typography (Chivo, Public Sans, JetBrains Mono), atmospheric torch and card lighting
+- **Vanilla JavaScript (ES6+)** — zero dependencies; clipboard API with toast notification, mobile drawer, scroll-spy observer, fluid hardware-accelerated cursor beacon
+- **GitHub Pages** — static hosting with zero build steps
 
 ## 📁 Project Structure
 
 ```
 .
-├── index.html      # Main portfolio page
-├── avatar.png      # Profile photo
-├── resume.pdf      # Downloadable résumé
-└── CNAME           # Custom domain configuration
+├── index.html              # Main portfolio page
+├── style.css               # Design system & styles
+├── script.js               # Interactive behaviors & lighting engine
+├── avatar.png              # Profile portrait
+├── Ayush_Bajpai_Resume.pdf # Downloadable résumé
+└── README.md               # Documentation
 ```
 
 ## 🚀 Running Locally
 
-No build step is required. Simply open `index.html` in a browser:
+No build step is required. Simply open `index.html` in any modern web browser or serve locally:
 
 ```bash
-# macOS / Linux
-open index.html
+# Python
+python -m http.server 8000
 
-# Or serve with any static file server, e.g.:
+# Or Node.js
 npx serve .
 ```

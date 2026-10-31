@@ -3,482 +3,501 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ayush Bajpai — AI/ML Engineer</title>
-  <meta name="description" content="Portfolio of Ayush Bajpai — AI/ML Engineer, Backend Developer, LeetCode Knight." />
+  <title>Ayush Bajpai — Technical Product &amp; Business Analyst</title>
+  <meta name="description" content="Portfolio of Ayush Bajpai — Technical Business Analyst, Product Spec Author, QA &amp; API Tester, and Systems Engineer (LeetCode Knight 1898, Top 4.55%)." />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Custom Cursor -->
-  <div class="cursor-dot" id="cursorDot"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-logo" onclick="scrollToTop()">
-      <span class="logo-bracket">&lt;</span>
-      <span class="logo-name">AB</span>
-      <span class="logo-bracket">/&gt;</span>
-    </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about"        class="nav-link">About</a></li>
-      <li><a href="#skills"       class="nav-link">Skills</a></li>
-      <li><a href="#projects"     class="nav-link">Projects</a></li>
-      <li><a href="#achievements" class="nav-link">Achievements</a></li>
-      <li><a href="#contact"      class="nav-link">Contact</a></li>
-    </ul>
-    <a href="mailto:ayushbajpai1711@gmail.com" class="nav-cta">Hire Me</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+  <!-- Ambient Torch & Cursor Follower (Accessible, pointer-events: none, decorative) -->
+  <div class="ambient-torch" id="ambientTorch" aria-hidden="true"></div>
+  <div class="cursor-beacon" id="cursorBeacon" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
-      <li><a href="#about"        class="mobile-link">About</a></li>
-      <li><a href="#skills"       class="mobile-link">Skills</a></li>
-      <li><a href="#projects"     class="mobile-link">Projects</a></li>
-      <li><a href="#achievements" class="mobile-link">Achievements</a></li>
-      <li><a href="#contact"      class="mobile-link">Contact</a></li>
-    </ul>
-  </div>
+  <!-- ═══════════════════════ NAVIGATION ═══════════════════════ -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#" class="brand-monogram" aria-label="Ayush Bajpai">
+        <span class="brand-name">Ayush Bajpai</span>
+      </a>
 
-  <!-- ═══════════════════════ HERO ═══════════════════════ -->
-  <section id="hero">
-    <canvas id="particleCanvas"></canvas>
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#experience" class="nav-item">Experience</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#benchmarks" class="nav-item">Benchmarks</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
 
-    <div class="hero-content">
-      <!-- Left: Text -->
-      <div class="hero-text">
-        <p class="hero-greeting mono-text">// hello world 👋</p>
-        <h1 class="hero-name">
-          <span class="glitch" data-text="Ayush Bajpai">Ayush Bajpai</span>
-        </h1>
-        <div class="hero-role">
-          <span class="role-prefix">I build&nbsp;</span>
-          <span id="typewriter" class="typewriter-text"></span><span class="cursor-blink">|</span>
-        </div>
-        <p class="hero-tagline">Building intelligent systems, one commit at a time.</p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn-primary">View Projects</a>
-          <a href="https://github.com/MrAyushBajpai" target="_blank" rel="noopener" class="btn-secondary">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub
-          </a>
-          <a href="https://linkedin.com/in/mrayushbajpai/" target="_blank" rel="noopener" class="btn-secondary">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn
-          </a>
-        </div>
-      </div>
-
-      <!-- Right: Avatar -->
-      <div class="hero-avatar">
-        <div class="avatar-frame">
-          <div class="avatar-glow"></div>
-          <div class="avatar-ring-outer"></div>
-          <img src="avatar.png" alt="Ayush Bajpai" class="avatar-img" />
-        </div>
-
-      </div>
-    </div>
-
-    <div class="scroll-indicator">
-      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
-      <span class="mono-text">scroll</span>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-num mono-text">01</span>
-        <h2 class="section-title">About Me</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p class="about-bio">
-            I'm a <span class="hl">B.Tech graduate in AI &amp; Machine Learning</span> from G.L. Bajaj Institute of Technology, having passed with <span class="hl">I Division with Distinction</span>. I'm passionate about building production-ready software at the intersection of intelligent systems and clean engineering.
-          </p>
-          <p class="about-bio">
-            From full-stack AI-powered SaaS platforms to C++ algorithms secured with AES-256 cryptography — I write code that <span class="hl">ships, scales, and solves real problems</span>.
-          </p>
-          <p class="about-bio">
-            When not pushing commits, I'm competing on LeetCode, mentoring chess players, experimenting with game mods, or tuning PC hardware for fun.
-          </p>
-          <div class="about-contacts">
-            <a href="mailto:ayushbajpai1711@gmail.com" class="about-contact-link">
-              <span>✉</span> ayushbajpai1711@gmail.com
-            </a>
-            <a href="https://mrayushbajpai.github.io" target="_blank" rel="noopener" class="about-contact-link">
-              <span>🌐</span> mrayushbajpai.github.io
-            </a>
-            <a href="tel:+919193025506" class="about-contact-link">
-              <span>📞</span> +91-9193025506
-            </a>
-          </div>
-        </div>
-
-        <div class="about-cards reveal">
-          <!-- LeetCode card -->
-          <div class="stat-card">
-            <div class="card-label mono-text">// leetcode stats</div>
-            <div class="lc-stats-grid">
-              <div class="lc-stat">
-                <span class="lc-val">487</span>
-                <span class="lc-desc">Solved</span>
-              </div>
-              <div class="lc-stat">
-                <span class="lc-val">1898</span>
-                <span class="lc-desc">Rating</span>
-              </div>
-              <div class="lc-stat">
-                <span class="lc-val">4.55%</span>
-                <span class="lc-desc">Global Top</span>
-              </div>
-              <div class="lc-stat">
-                <span class="lc-val">67</span>
-                <span class="lc-desc">Max Streak</span>
-              </div>
-            </div>
-            <div class="lc-bars">
-              <div class="lc-row">
-                <span class="lc-label easy">Easy</span>
-                <div class="lc-track"><div class="lc-fill" data-w="27" style="background:#00b894;"></div></div>
-                <span class="lc-count">257</span>
-              </div>
-              <div class="lc-row">
-                <span class="lc-label med">Med</span>
-                <div class="lc-track"><div class="lc-fill" data-w="9.5" style="background:#fdcb6e;"></div></div>
-                <span class="lc-count">197</span>
-              </div>
-              <div class="lc-row">
-                <span class="lc-label hard">Hard</span>
-                <div class="lc-track"><div class="lc-fill" data-w="3.5" style="background:#e17055;"></div></div>
-                <span class="lc-count">33</span>
-              </div>
-            </div>
-          </div>
-          <!-- Education card -->
-          <div class="stat-card">
-            <div class="card-label mono-text">// education</div>
-            <div class="edu-item">
-              <div class="edu-degree">B.Tech — AI &amp; Machine Learning</div>
-              <div class="edu-inst">G.L. Bajaj Institute of Technology and Management</div>
-              <div class="edu-row">
-                <span class="edu-year">2022 – 2026</span>
-              </div>
-              <div class="edu-distinction">I Division with Distinction</div>
-            </div>
-            <div class="edu-divider"></div>
-            <div class="edu-minor-grid">
-              <div class="edu-minor"><span class="edu-minor-label">Class XII</span><span class="edu-minor-val">85.6%</span></div>
-              <div class="edu-minor"><span class="edu-minor-label">Class X</span><span class="edu-minor-val">85.6%</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════ SKILLS ═══════════════════════ -->
-  <section id="skills" class="section section-alt">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-num mono-text">02</span>
-        <h2 class="section-title">Skills</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="skills-grid">
-
-        <div class="skill-cat reveal" data-delay="0">
-          <h3 class="skill-cat-title"><span class="mono-text cyan-text">&gt;&nbsp;</span>Languages</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">C++</span>
-            <span class="skill-tag">C</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">SQL</span>
-          </div>
-        </div>
-
-        <div class="skill-cat reveal" data-delay="80">
-          <h3 class="skill-cat-title"><span class="mono-text cyan-text">&gt;&nbsp;</span>Frontend</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">HTML5</span>
-            <span class="skill-tag">CSS3</span>
-            <span class="skill-tag">Tailwind CSS</span>
-            <span class="skill-tag">Bootstrap</span>
-          </div>
-        </div>
-
-        <div class="skill-cat reveal" data-delay="160">
-          <h3 class="skill-cat-title"><span class="mono-text cyan-text">&gt;&nbsp;</span>Backend</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">FastAPI</span>
-            <span class="skill-tag">REST APIs</span>
-            <span class="skill-tag">JWT Auth</span>
-            <span class="skill-tag">SQLAlchemy</span>
-            <span class="skill-tag">MySQL</span>
-          </div>
-        </div>
-
-        <div class="skill-cat reveal" data-delay="240">
-          <h3 class="skill-cat-title"><span class="mono-text cyan-text">&gt;&nbsp;</span>AI / ML</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">RAG Systems</span>
-            <span class="skill-tag">Prompt Engineering</span>
-            <span class="skill-tag">LLM APIs (Groq)</span>
-            <span class="skill-tag">FAISS</span>
-            <span class="skill-tag">Embeddings</span>
-            <span class="skill-tag">OpenCV</span>
-          </div>
-        </div>
-
-        <div class="skill-cat reveal" data-delay="320">
-          <h3 class="skill-cat-title"><span class="mono-text cyan-text">&gt;&nbsp;</span>Tools &amp; Systems</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">Linux</span>
-            <span class="skill-tag">Postman</span>
-            <span class="skill-tag">Vercel</span>
-            <span class="skill-tag">Render</span>
-            <span class="skill-tag">Cheat Engine</span>
-          </div>
-        </div>
-
-        <div class="skill-cat reveal" data-delay="400">
-          <h3 class="skill-cat-title"><span class="mono-text cyan-text">&gt;&nbsp;</span>Creative Suite</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Photoshop</span>
-            <span class="skill-tag">Premiere Pro</span>
-            <span class="skill-tag">MS Word</span>
-            <span class="skill-tag">PowerPoint</span>
-            <span class="skill-tag">Excel</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-num mono-text">03</span>
-        <h2 class="section-title">Projects</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <!-- Featured Row -->
-      <div class="projects-featured">
-
-        <div class="project-card featured reveal" data-delay="0">
-          <div class="proj-top">
-            <span class="proj-type">AI · RAG System</span>
-            <a href="https://github.com/MrAyushBajpai/SiftAI" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
-          </div>
-          <h3 class="proj-title">SiftAI</h3>
-          <p class="proj-sub mono-text">AI Document Chat</p>
-          <p class="proj-desc">End-to-end RAG pipeline enabling natural language chat over PDFs. Implemented semantic search with FAISS achieving 1–5ms retrieval latency, context-constrained prompting to minimise hallucination, and optimised token-aware chunking (300–700 tokens).</p>
-          <div class="proj-pills">
-            <span class="proj-pill">React</span>
-            <span class="proj-pill">FastAPI</span>
-            <span class="proj-pill">FAISS</span>
-            <span class="proj-pill">Groq LLM</span>
-            <span class="proj-pill">SentenceTransformers</span>
-          </div>
-          <div class="proj-metrics">
-            <div class="proj-metric"><span class="metric-val">1–5ms</span><span class="metric-lbl">retrieval</span></div>
-            <div class="proj-metric"><span class="metric-val">~1–2s</span><span class="metric-lbl">response</span></div>
-          </div>
-        </div>
-
-        <div class="project-card featured reveal" data-delay="120">
-          <div class="proj-top">
-            <span class="proj-type">SaaS · AI</span>
-            <a href="https://github.com/MrAyushBajpai/TaskScribe" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
-          </div>
-          <h3 class="proj-title">TaskScribe</h3>
-          <p class="proj-sub mono-text">AI Meeting → Task SaaS</p>
-          <p class="proj-desc">SaaS that converts meeting transcripts into structured tasks with owner, deadline, and priority via JSON-structured LLM prompting. Full CRUD system with JWT-secured per-user isolation, deployed on Render + Vercel.</p>
-          <div class="proj-pills">
-            <span class="proj-pill">React</span>
-            <span class="proj-pill">FastAPI</span>
-            <span class="proj-pill">SQLAlchemy</span>
-            <span class="proj-pill">JWT</span>
-            <span class="proj-pill">Groq LLM</span>
-          </div>
-          <div class="proj-metrics">
-            <div class="proj-metric"><span class="metric-val">Full CRUD</span><span class="metric-lbl">system</span></div>
-            <div class="proj-metric"><span class="metric-val">Per-user</span><span class="metric-lbl">isolation</span></div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Secondary Row -->
-      <div class="projects-secondary">
-
-        <div class="project-card reveal" data-delay="0">
-          <div class="proj-top">
-            <span class="proj-type">Python · Systems</span>
-            <a href="https://github.com/MrAyushBajpai/auto-brightness-windows" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
-          </div>
-          <h3 class="proj-title">Auto Brightness</h3>
-          <p class="proj-sub mono-text">Windows Adaptive Brightness</p>
-          <p class="proj-desc">Multithreaded Python app using OpenCV for real-time ambient light estimation. Reduced manual brightness adjustments by ~90% on unsupported Windows systems.</p>
-          <div class="proj-pills">
-            <span class="proj-pill">Python</span>
-            <span class="proj-pill">OpenCV</span>
-            <span class="proj-pill">Threading</span>
-            <span class="proj-pill">Tkinter</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal" data-delay="100">
-          <div class="proj-top">
-            <span class="proj-type">C++ · Cryptography</span>
-            <a href="https://github.com/MrAyushBajpai/Aethern" target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
-          </div>
-          <h3 class="proj-title">Aethern</h3>
-          <p class="proj-sub mono-text">Spaced Repetition Scheduler</p>
-          <p class="proj-desc">Secure SM-2 flashcard scheduler with AES-256 encryption, Argon2 password hashing, and XSalsa20-Poly1305 AEAD. Zero-plaintext local persistence.</p>
-          <div class="proj-pills">
-            <span class="proj-pill">C++</span>
-            <span class="proj-pill">SM-2 Algorithm</span>
-            <span class="proj-pill">AES-256</span>
-            <span class="proj-pill">CMake</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal" data-delay="200">
-          <div class="proj-top">
-            <span class="proj-type">IoT · Embedded</span>
-            <span class="proj-type-tag">Hardware</span>
-          </div>
-          <h3 class="proj-title">AQI Monitor</h3>
-          <p class="proj-sub mono-text">IoT Real-Time Air Quality</p>
-          <p class="proj-desc">Real-time AQI data pipeline from ESP32 edge devices to cloud dashboards. &lt;2s end-to-end latency, 10s telemetry intervals, 95% reduced manual data collection.</p>
-          <div class="proj-pills">
-            <span class="proj-pill">ESP32</span>
-            <span class="proj-pill">Arduino IoT Cloud</span>
-            <span class="proj-pill">Python</span>
-            <span class="proj-pill">MQ135</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════ ACHIEVEMENTS ═══════════════════════ -->
-  <section id="achievements" class="section section-alt">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-num mono-text">04</span>
-        <h2 class="section-title">Achievements</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="achievements-grid">
-
-        <div class="ach-card reveal" data-delay="0">
-          <div class="ach-icon">⚔️</div>
-          <h3 class="ach-title">LeetCode Knight</h3>
-          <p class="ach-desc">Rated <span class="hl">1898</span> in LeetCode contests, placing in the top <span class="hl">4.55%</span> globally with 487 problems solved across all difficulty levels.</p>
-          <div class="ach-tags">
-            <span class="ach-tag">Rating 1898</span>
-            <span class="ach-tag">Rank 38,567 / 874,367</span>
-            <span class="ach-tag">22 Contests</span>
-          </div>
-        </div>
-
-        <div class="ach-card reveal" data-delay="100">
-          <div class="ach-icon">🎨</div>
-          <h3 class="ach-title">Design &amp; Media Team Lead</h3>
-          <p class="ach-desc">Led departmental design club delivering <span class="hl">50+ digital assets</span> at a 100% on-time delivery rate — demonstrating leadership, ownership, and accountability.</p>
-          <div class="ach-tags">
-            <span class="ach-tag">50+ Assets</span>
-            <span class="ach-tag">100% On-Time</span>
-          </div>
-        </div>
-
-        <div class="ach-card reveal" data-delay="200">
-          <div class="ach-icon">🤖</div>
-          <h3 class="ach-title">Robotics Event Lead</h3>
-          <p class="ach-desc">Led <span class="hl">10+ robotics events</span> from concept to execution — overseeing planning, scheduling, design, and cross-team coordination throughout.</p>
-          <div class="ach-tags">
-            <span class="ach-tag">10+ Events</span>
-            <span class="ach-tag">Full Ownership</span>
-          </div>
-        </div>
-
-        <div class="ach-card reveal" data-delay="300">
-          <div class="ach-icon">♟️</div>
-          <h3 class="ach-title">Chess Mentor</h3>
-          <p class="ach-desc">Coached a <span class="hl">National-Level Semi Finalist</span> at the India College Chess Championship hosted by chess.com — showcasing mentorship and analytical thinking.</p>
-          <div class="ach-tags">
-            <span class="ach-tag">National Level</span>
-            <span class="ach-tag">chess.com</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-num mono-text">05</span>
-        <h2 class="section-title">Let's Connect</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="contact-body reveal">
-        <p class="contact-intro">
-          Actively looking for opportunities. Whether you have a role, a project idea, or just want to talk tech — I'm all ears.
-        </p>
-        <a href="mailto:ayushbajpai1711@gmail.com" class="contact-email">
-          ayushbajpai1711@gmail.com
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <a href="Ayush_Bajpai_Resume.pdf" class="btn btn-sm btn-outline" download="Ayush_Bajpai_Resume.pdf">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Résumé</span>
         </a>
-        <div class="contact-socials">
-          <a href="https://github.com/MrAyushBajpai" target="_blank" rel="noopener" class="social-btn">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub
-          </a>
-          <a href="https://linkedin.com/in/mrayushbajpai/" target="_blank" rel="noopener" class="social-btn">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn
-          </a>
-          <a href="https://leetcode.com/u/MrAyushBajpai/" target="_blank" rel="noopener" class="social-btn">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
-            LeetCode
-          </a>
-          <a href="https://mrayushbajpai.github.io" target="_blank" rel="noopener" class="social-btn">
-            🌐 Portfolio
-          </a>
-        </div>
+        <a href="mailto:ayushbajpai1711@gmail.com" class="btn btn-sm btn-primary">Let's Talk</a>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
       </div>
     </div>
-  </section>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileNav" aria-hidden="true">
+      <ul class="mobile-menu">
+        <li><a href="#experience" class="mobile-item">Experience</a></li>
+        <li><a href="#projects" class="mobile-item">Projects</a></li>
+        <li><a href="#skills" class="mobile-item">Skills</a></li>
+        <li><a href="#benchmarks" class="mobile-item">Benchmarks</a></li>
+        <li><a href="#contact" class="mobile-item">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="Ayush_Bajpai_Resume.pdf" class="btn btn-full btn-outline" download="Ayush_Bajpai_Resume.pdf">
+          Download Résumé (PDF)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════ MINIMAL HERO ═══════════════════════ -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-layout">
+        
+        <!-- Left: Crisp, Authoritative Copy -->
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Business Analyst Trainee @ SYMB</span>
+          </div>
+
+          <h1 class="hero-title">
+            Bridging business specs with engineering rigor.
+          </h1>
+
+          <p class="hero-description">
+            I eliminate friction between stakeholders and engineering teams. Authoring BRDs, PRDs, and Gherkin criteria, triaging Jira defect lifecycles, testing APIs in Postman, and engineering resilient systems.
+          </p>
+
+          <div class="hero-actions">
+            <a href="Ayush_Bajpai_Resume.pdf" class="btn btn-primary btn-lg" download="Ayush_Bajpai_Resume.pdf">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download Résumé (PDF)</span>
+            </a>
+            <a href="mailto:ayushbajpai1711@gmail.com" class="btn btn-secondary btn-lg">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://linkedin.com/in/mrayushbajpai/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn Profile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/MrAyushBajpai" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub Profile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <button class="social-icon-link copy-email-btn" data-email="ayushbajpai1711@gmail.com" aria-label="Copy Email">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span class="copy-label">Copy Email</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Clean Minimal Portrait Frame -->
+        <div class="hero-visual">
+          <div class="portrait-card">
+            <div class="portrait-image-wrap">
+              <img src="avatar.png" alt="Ayush Bajpai" class="portrait-image" width="380" height="380" />
+            </div>
+            <div class="portrait-meta">
+              <div class="portrait-title-row">
+                <span class="portrait-name">Ayush Bajpai</span>
+                <span class="badge-tag">New Delhi &middot; Hybrid</span>
+              </div>
+              <p class="portrait-sub">B.Tech AI &amp; ML (Distinction) &middot; SYMB Business Analyst</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
+    <section class="section" id="experience">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">Current Role &amp; Impact</h2>
+          <p class="section-subtitle">
+            Grounding product delivery in structured specifications, defect triage, and automated verification.
+          </p>
+        </div>
+
+        <div class="experience-panel">
+          <div class="exp-top-bar">
+            <div>
+              <h3 class="exp-role">Business Analyst Trainee</h3>
+              <p class="exp-company">SYMB Consultancy Services Pvt. Ltd. &middot; New Delhi (Hybrid)</p>
+            </div>
+            <span class="exp-date">Aug 2026 &ndash; Present</span>
+          </div>
+
+          <div class="exp-highlights-list">
+            <div class="exp-item">
+              <span class="bullet-dot"></span>
+              <p>
+                <strong>Jira Defect Lifecycle:</strong> Created and triaged <strong>20+ Jira tickets</strong> for bugs, functional tasks, and change requests with detailed reproduction steps, severity grading, and expected vs. actual outcomes, tracking each to verified resolution.
+              </p>
+            </div>
+            <div class="exp-item">
+              <span class="bullet-dot"></span>
+              <p>
+                <strong>QA Verification:</strong> Conducted manual exploratory and regression testing across <strong>3 client projects</strong>. Logged 15+ verified bugs and UX enhancements with network logs and screenshots; retested fixes to prevent regression.
+              </p>
+            </div>
+            <div class="exp-item">
+              <span class="bullet-dot"></span>
+              <p>
+                <strong>Specification Authoring:</strong> Authored comprehensive <strong>BRDs, FRDs, and PRDs</strong> that translated complex stakeholder needs into unambiguous user stories, Figma workflows, and Gherkin acceptance criteria.
+              </p>
+            </div>
+            <div class="exp-item">
+              <span class="bullet-dot"></span>
+              <p>
+                <strong>Discovery &amp; Agile Delivery:</strong> Conducted competitor teardowns to inform feature backlogs; utilized modern AI tools for accelerated test-case drafting under strict human review; actively coordinated daily status in an Agile/Scrum cadence.
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-tools-row">
+            <span class="tool-pill">Jira</span>
+            <span class="tool-pill">BRD / FRD / PRD</span>
+            <span class="tool-pill">Postman</span>
+            <span class="tool-pill">REST APIs</span>
+            <span class="tool-pill">Figma</span>
+            <span class="tool-pill">Manual Testing</span>
+            <span class="tool-pill">Agile / Scrum</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ SELECTED WORK ═══════════════════════ -->
+    <section class="section section-tinted" id="projects">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-subtitle">
+            Engineered systems, IoT data pipelines, and intelligent tools with measurable outcomes.
+          </p>
+        </div>
+
+        <div class="project-list">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-title-group">
+                <span class="project-tag">IoT &middot; Telemetry Pipeline</span>
+                <h3 class="project-name">IoT Air Quality Monitoring System</h3>
+              </div>
+              <span class="project-stat-pill">&lt; 2s Cloud Latency</span>
+            </div>
+            <p class="project-desc">
+              Built an ESP32-based hardware telemetry system that streams particulate and atmospheric data to Arduino IoT Cloud over Wi-Fi via MQTT with 10-second polling. Engineered fault-tolerant reconnect and exponential backoff logic for edge Wi-Fi drops, reducing manual monitoring effort by 95%.
+            </p>
+            <div class="project-tech-row">
+              <span class="tech-item">ESP32</span>
+              <span class="tech-item">MQTT</span>
+              <span class="tech-item">Arduino IoT Cloud</span>
+              <span class="tech-item">C/C++</span>
+              <span class="tech-item">Python</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-title-group">
+                <span class="project-tag">Systems &middot; Computer Vision</span>
+                <h3 class="project-name">Auto Brightness Windows (Ambient Light Engine)</h3>
+              </div>
+              <a href="https://github.com/MrAyushBajpai/auto-brightness-windows" target="_blank" rel="noopener noreferrer" class="project-link">
+                GitHub ↗
+              </a>
+            </div>
+            <p class="project-desc">
+              Shipped a lightweight multithreaded Python system-tray utility that calibrates display luminance using camera feed on Windows laptops lacking hardware ambient light sensors. Utilized OpenCV for real-time luminance estimation, reducing manual adjustments by ~90%.
+            </p>
+            <div class="project-tech-row">
+              <span class="tech-item">Python</span>
+              <span class="tech-item">OpenCV</span>
+              <span class="tech-item">Multithreading</span>
+              <span class="tech-item">Tkinter</span>
+              <span class="tech-item">MIT License</span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-title-group">
+                <span class="project-tag">AI &middot; RAG Architecture</span>
+                <h3 class="project-name">SiftAI &mdash; RAG Document Intelligence</h3>
+              </div>
+              <a href="https://github.com/MrAyushBajpai/SiftAI" target="_blank" rel="noopener noreferrer" class="project-link">
+                GitHub ↗
+              </a>
+            </div>
+            <p class="project-desc">
+              End-to-end Retrieval-Augmented Generation pipeline enabling conversational querying across unstructured PDF documentation. Implemented FAISS vector search achieving 1&ndash;5ms retrieval latency, token-optimized chunking, and strict context-constrained prompting.
+            </p>
+            <div class="project-tech-row">
+              <span class="tech-item">React</span>
+              <span class="tech-item">FastAPI</span>
+              <span class="tech-item">FAISS</span>
+              <span class="tech-item">Groq LLMs</span>
+              <span class="tech-item">SentenceTransformers</span>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-title-group">
+                <span class="project-tag">SaaS &middot; Product Specs</span>
+                <h3 class="project-name">TaskScribe &mdash; Meeting-to-Spec Engine</h3>
+              </div>
+              <a href="https://github.com/MrAyushBajpai/TaskScribe" target="_blank" rel="noopener noreferrer" class="project-link">
+                GitHub ↗
+              </a>
+            </div>
+            <p class="project-desc">
+              SaaS application converting raw meeting transcripts into structured action items with assigned owners, priority scores, and deadlines via JSON-structured schema prompting. Built with isolated tenant auth via JWT, FastAPI, and SQLAlchemy.
+            </p>
+            <div class="project-tech-row">
+              <span class="tech-item">FastAPI</span>
+              <span class="tech-item">React</span>
+              <span class="tech-item">SQLAlchemy</span>
+              <span class="tech-item">JWT Auth</span>
+              <span class="tech-item">MySQL</span>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-title-group">
+                <span class="project-tag">C++ &middot; Cryptography</span>
+                <h3 class="project-name">Aethern &mdash; Cryptographic Spaced Repetition</h3>
+              </div>
+              <a href="https://github.com/MrAyushBajpai/Aethern" target="_blank" rel="noopener noreferrer" class="project-link">
+                GitHub ↗
+              </a>
+            </div>
+            <p class="project-desc">
+              High-performance spaced repetition scheduler in modern C++ implementing the SM-2 algorithm. Guaranteed zero-plaintext local persistence using AES-256 encryption, Argon2 password hashing, and authenticated ciphertext verification.
+            </p>
+            <div class="project-tech-row">
+              <span class="tech-item">C++</span>
+              <span class="tech-item">SM-2 Algorithm</span>
+              <span class="tech-item">AES-256</span>
+              <span class="tech-item">CMake</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ SKILLS & COMPETENCIES ═══════════════════════ -->
+    <section class="section" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">Core Competencies</h2>
+          <p class="section-subtitle">
+            A balanced skill set spanning business analysis, quality assurance, and systems engineering.
+          </p>
+        </div>
+
+        <div class="skills-matrix">
+          
+          <div class="skill-category">
+            <h3 class="skill-cat-name">Product &amp; Business Analysis</h3>
+            <div class="skill-pill-wrap">
+              <span class="pill">BRD / FRD / PRD</span>
+              <span class="pill">Jira Ticketing</span>
+              <span class="pill">User Stories</span>
+              <span class="pill">Gherkin Criteria</span>
+              <span class="pill">Figma Wireframing</span>
+              <span class="pill">Competitor Analysis</span>
+              <span class="pill">Agile / Scrum</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-cat-name">Quality Assurance &amp; Testing</h3>
+            <div class="skill-pill-wrap">
+              <span class="pill">Manual Testing</span>
+              <span class="pill">API Testing</span>
+              <span class="pill">Postman</span>
+              <span class="pill">Defect Lifecycle</span>
+              <span class="pill">Regression Retesting</span>
+              <span class="pill">Root Cause Analysis</span>
+              <span class="pill">JSON Schema QA</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-cat-name">Engineering &amp; Systems</h3>
+            <div class="skill-pill-wrap">
+              <span class="pill">Python</span>
+              <span class="pill">C / C++</span>
+              <span class="pill">SQL / MySQL</span>
+              <span class="pill">Linux (CLI)</span>
+              <span class="pill">Git / GitHub</span>
+              <span class="pill">REST APIs</span>
+              <span class="pill">Data Structures</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-cat-name">AI, Vision &amp; Hardware</h3>
+            <div class="skill-pill-wrap">
+              <span class="pill">RAG Architectures</span>
+              <span class="pill">FAISS Vector Search</span>
+              <span class="pill">OpenCV</span>
+              <span class="pill">LLM Prompting</span>
+              <span class="pill">ESP32 IoT</span>
+              <span class="pill">MQTT Protocol</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ BENCHMARKS ═══════════════════════ -->
+    <section class="section section-tinted" id="benchmarks">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">Verified Benchmarks</h2>
+          <p class="section-subtitle">
+            Measured achievements across competitive algorithms, academics, and leadership.
+          </p>
+        </div>
+
+        <div class="benchmarks-row">
+          
+          <!-- LeetCode Card -->
+          <div class="benchmark-box">
+            <div class="box-top">
+              <span class="box-badge">LeetCode Knight</span>
+              <span class="box-val">1898 Rating</span>
+            </div>
+            <h3 class="box-heading">Top 4.55% Worldwide</h3>
+            <p class="box-desc">
+              Solved 487 algorithmic problems across 22 contests (257 Easy, 197 Medium, 33 Hard) ranking #38,567 globally among 874,000+ competitors.
+            </p>
+          </div>
+
+          <!-- Academic Card -->
+          <div class="benchmark-box">
+            <div class="box-top">
+              <span class="box-badge">B.Tech Degree</span>
+              <span class="box-val">I Division with Distinction</span>
+            </div>
+            <h3 class="box-heading">AI &amp; Machine Learning</h3>
+            <p class="box-desc">
+              G.L. Bajaj Institute of Technology &amp; Management (2022&ndash;2026). Maintained distinction while actively building open-source projects and leading student clubs.
+            </p>
+          </div>
+
+          <!-- Leadership Card -->
+          <div class="benchmark-box">
+            <div class="box-top">
+              <span class="box-badge">Club Leadership</span>
+              <span class="box-val">100% On-Time</span>
+            </div>
+            <h3 class="box-heading">Design Lead &amp; Robotics</h3>
+            <p class="box-desc">
+              Delivered 50+ digital design assets on time as Design Lead; directed 10+ robotics events end-to-end; coached a National-Level Semi-Finalist in India College Chess Championship.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+    <section class="section" id="contact">
+      <div class="container contact-wrapper">
+        <div class="contact-box">
+          <span class="contact-tag">Get in Touch</span>
+          <h2 class="contact-heading">Let's discuss how I can bring spec clarity and technical rigor to your team.</h2>
+          <p class="contact-text">
+            I'm actively open for Technical Business Analyst, Associate Product Manager, and Product Engineering opportunities.
+          </p>
+          <div class="contact-buttons">
+            <a href="mailto:ayushbajpai1711@gmail.com" class="btn btn-primary btn-lg">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>ayushbajpai1711@gmail.com</span>
+            </a>
+            <button class="btn btn-secondary btn-lg copy-email-btn" data-email="ayushbajpai1711@gmail.com">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span>Copy Email</span>
+            </button>
+          </div>
+          <div class="contact-links-row">
+            <a href="tel:+919193025506" class="contact-link">+91-9193025506</a>
+            <span class="sep">&middot;</span>
+            <a href="https://linkedin.com/in/mrayushbajpai/" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+            <span class="sep">&middot;</span>
+            <a href="https://github.com/MrAyushBajpai" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
+            <span class="sep">&middot;</span>
+            <a href="https://leetcode.com/u/MrAyushBajpai/" target="_blank" rel="noopener noreferrer" class="contact-link">LeetCode</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <span class="mono-text">// Designed &amp; Built by Ayush Bajpai</span>
-      <span class="mono-text">2026</span>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <span>Ayush Bajpai &middot; Technical Product &amp; Business Analyst</span>
+      <a href="#hero" class="back-link">Back to Top ↑</a>
     </div>
   </footer>
+
+  <!-- Toast -->
+  <div class="toast-notification" id="copyToast" role="status" aria-live="polite" aria-hidden="true">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toastMsg">Email copied to clipboard</span>
+  </div>
 
   <script src="script.js"></script>
 </body>
